@@ -11,16 +11,23 @@
 /* LAYOUTS */
 
 @import '4-layouts/generic';
-
+@import '4-layouts/header';
+@import '4-layouts/center';
 
 
 /* COMPONENTS */
+@import '5-components/badge';
+@import '5-components/hook';
+@import '5-components/icon-text';
 
 
 /* COMPOSITIONS */
+@import '6-compositions/card';
+@import '6-compositions/post';
+
 
 
 /* MEDIA QUERIES */
-@import '7-mediaqueries/_template.scss';
+@import '7-mediaqueries/_index.scss';
 
 
