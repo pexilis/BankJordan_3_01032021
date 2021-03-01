@@ -142,12 +142,13 @@ h1, h2, h3, h4, h5 {
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "left" "right";
 }
-.l-header__left {
+.l-header__left, .l-header__right {
   justify-content: center;
+  padding: 16px 0;
+}
+.l-header__left {
   align-items: center;
   grid-area: left;
-  background-color: white;
-  padding: 16px 0;
   z-index: 2;
   box-shadow: 0 2px 15px #CECECE;
 }
@@ -155,9 +156,7 @@ h1, h2, h3, h4, h5 {
   left: 23px;
 }
 .l-header__right {
-  justify-content: center;
   grid-area: right;
-  padding: 16px 0;
   background-color: #EAEAEA;
   z-index: 1;
 }
