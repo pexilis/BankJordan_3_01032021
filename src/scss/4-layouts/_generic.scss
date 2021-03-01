@@ -10,6 +10,14 @@
     transform:translate(-50%, -50%);
 }
 
+.margin--vertical{
+    margin: auto 0;
+}
+
+.margin--horizontal{
+    margin: 0 auto;
+}
+
 .pos--center-top-corner{
     left: 50%;
     transform:translate(-50%, -50%);
@@ -79,4 +87,8 @@
 
 .relative{
     position:relative;
+}
+
+.grid{
+    display:grid;
 }
