@@ -1,0 +1,42 @@
+.l-header{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "left" 
+        "right";
+
+    &__left{
+        justify-content: center;
+        grid-area:left;
+        background-color:white;
+        padding: 16px 0;
+        z-index:2;
+        box-shadow:0 2px 15px map-get($baseColor, shadow);
+    }
+
+    &__right{
+        justify-content: center;
+        grid-area:right;
+        padding: 16px 0;
+        background-color:map-get($baseColor, header);
+        z-index:1;
+    }
+}
+
+@mixin l-header--laptop(){
+    .l-header{
+        grid-template-columns: auto 375px;
+        grid-template-rows:1fr;
+        grid-template-areas:
+            "left right";
+        
+        &__left{
+            z-index:2;
+            padding: 32px 0;
+        }
+        &__right{
+            box-shadow:0 2px 15px map-get($baseColor, shadow);
+        }
+    }
+}
