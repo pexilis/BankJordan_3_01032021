@@ -1,0 +1,141 @@
+/* Colors */
+/* BASES */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+}
+
+/* LAYOUTS */
+.center--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pos--center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.margin--vertical {
+  margin: auto 0;
+}
+
+.margin--horizontal {
+  margin: 0 auto;
+}
+
+.pos--center-top-corner {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos--center-bottom-corner {
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.pos--center-left-corner {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos--center-right-corner {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.pos--top-left-corner {
+  transform: translate(-50%, -50%);
+}
+
+.pos--top-right-corner {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.pos--bottom-left-corner {
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.pos--bottom-right-corner {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.flex {
+  display: flex;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.horizontal {
+  width: 100%;
+}
+
+.vertical {
+  height: 100%;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.grid {
+  display: grid;
+}
+
+/* COMPONENTS */
+.badge {
+  position: absolute;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* COMPOSITIONS */
+/* MEDIA QUERIES */
+
+/*# sourceMappingURL=index.css.map */
