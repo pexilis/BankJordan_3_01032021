@@ -1,0 +1,26 @@
+// Abstracts 
+@import '1-abstracts/variables';
+@import '1-abstracts/mixins';
+@import '1-abstracts/deploy';
+
+/* BASES */
+@import '3-bases/webfonts';
+@import '3-bases/reset';
+@import '3-bases/typography';
+
+/* LAYOUTS */
+
+@import '4-layouts/generic';
+
+
+
+/* COMPONENTS */
+
+
+/* COMPOSITIONS */
+
+
+/* MEDIA QUERIES */
+@import '7-mediaqueries/_template.scss';
+
+
