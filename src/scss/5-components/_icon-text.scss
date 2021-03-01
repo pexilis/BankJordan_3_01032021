@@ -1,5 +1,16 @@
-.icon-text{
+.icon-txt{
     display:flex;
     align-items:center;
     justify-content:space-between;
+}
+
+.icon-txt--header{
+    .icon-txt__icon{
+        margin-right:18px;
+    }
+
+    .icon-txt__description{
+        color: map-get($baseColor, footer);
+        font-weight:500;
+    }
 }
