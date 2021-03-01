@@ -18,6 +18,11 @@
     margin: 0 auto;
 }
 
+.pos--center-vertical{
+    top:50%;
+    transform:translateY(-50%);
+}
+
 .pos--center-top-corner{
     left: 50%;
     transform:translate(-50%, -50%);
@@ -67,6 +72,7 @@
 
 .img{
     object-fit: cover;
+    user-select:none;
 }
 
 .horizontal{
