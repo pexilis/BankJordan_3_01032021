@@ -164,13 +164,16 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 /* COMPONENTS */
-.badge--action {
+.badge--call {
   min-width: 216px;
   padding: 18px 30px;
   color: white;
+  border-radius: 26px;
+}
+
+.badge--primary {
   background: #e771da;
   background: linear-gradient(180deg, #e771da 20%, #a15bdb 95%);
-  border-radius: 26px;
 }
 
 .badge--count {
@@ -189,6 +192,20 @@ input:focus, textarea:focus, select:focus, button:focus {
   content: counter(badgeCounter);
 }
 
+.badge--state {
+  top: 13px;
+  right: 13px;
+  padding: 8px 15px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.badge--green {
+  background-color: #99E2D0;
+  color: #278870;
+}
+
 .hook--intro .hook__title {
   margin: 0 auto;
   width: 86%;
@@ -200,6 +217,14 @@ input:focus, textarea:focus, select:focus, button:focus {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
+}
+
+.hook--restaurant .hook__title {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.hook--restaurant .hook__description {
+  font-size: 17px;
 }
 
 .icon-txt {
@@ -216,7 +241,6 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 .icon-txt--post .icon-txt__icon {
-  color: #7E7E7E;
   margin-right: 28px;
 }
 .icon-txt--post .icon-txt__description {

@@ -1,0 +1,15 @@
+.card--restaurant{
+    background-color:white;
+    border-radius:20px;
+    box-shadow: 0 2px 10px map-get($baseColor, shadow);
+
+    &__img{
+        border-radius: 20px 20px 0 0;
+        height:175px;
+    }
+
+    .card__header{
+        margin-left: 16px;
+        margin-top:14px;
+    }
+}
