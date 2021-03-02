@@ -1,7 +1,6 @@
 .icon-txt{
     display:flex;
     align-items:center;
-    justify-content:space-between;
 }
 
 .icon-txt--header{
@@ -11,6 +10,17 @@
 
     .icon-txt__description{
         color: map-get($baseColor, footer);
+        font-weight:500;
+    }
+}
+
+.icon-txt--post{
+    .icon-txt__icon{
+        margin-right:28px;
+    }
+
+    .icon-txt__description{
+        font-size:16px;
         font-weight:500;
     }
 }

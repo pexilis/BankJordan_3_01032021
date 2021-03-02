@@ -19,6 +19,7 @@ html {
 body {
   min-height: 100%;
   position: relative;
+  counter-reset: badgeCounter;
 }
 
 a {
@@ -28,10 +29,6 @@ a {
 
 input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "Shrikhand", cursive;
 }
 
 /* LAYOUTS */
@@ -162,19 +159,52 @@ h1, h2, h3, h4, h5 {
 }
 
 .l-center {
-  width: 89.8666666667%;
+  width: 90.6666666667%;
   margin: 0 auto;
 }
 
 /* COMPONENTS */
-.badge {
-  position: absolute;
+.badge--action {
+  min-width: 216px;
+  padding: 18px 30px;
+  color: white;
+  background: #e771da;
+  background: linear-gradient(180deg, #e771da 20%, #a15bdb 95%);
+  border-radius: 26px;
+}
+
+.badge--count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: #9356DC;
+}
+.badge--count::after {
+  counter-increment: badgeCounter;
+  content: counter(badgeCounter);
+}
+
+.hook--intro .hook__title {
+  margin: 0 auto;
+  width: 86%;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.hook--intro .hook__description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .icon-txt {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .icon-txt--header .icon-txt__icon {
@@ -182,6 +212,15 @@ h1, h2, h3, h4, h5 {
 }
 .icon-txt--header .icon-txt__description {
   color: #353535;
+  font-weight: 500;
+}
+
+.icon-txt--post .icon-txt__icon {
+  color: #7E7E7E;
+  margin-right: 28px;
+}
+.icon-txt--post .icon-txt__description {
+  font-size: 16px;
   font-weight: 500;
 }
 

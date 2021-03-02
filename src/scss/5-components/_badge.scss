@@ -1,3 +1,28 @@
 .badge{
-    position:absolute;
+    
+}
+
+.badge--action{
+    min-width:216px;
+    padding: 18px 30px;
+    color:white;
+    @include actionGradiant;
+    border-radius:26px;
+}
+
+.badge--count{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    font-size:12px;
+    background-color: map-get($baseColor, primary);
+
+    &::after{
+        counter-increment:badgeCounter;
+        content:counter(badgeCounter)
+    }
 }

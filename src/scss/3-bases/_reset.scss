@@ -15,6 +15,7 @@ html{
 body{
 	min-height:100%;
 	position:relative;
+	counter-reset:badgeCounter;
 }
 
 a{
@@ -26,7 +27,4 @@ input:focus, textarea:focus, select:focus, button:focus{
     outline: none;
 }
 
-h1, h2, h3, h4, h5{
-	font-family: 'Shrikhand', cursive;
-}
 

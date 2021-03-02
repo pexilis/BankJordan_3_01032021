@@ -1,4 +1,10 @@
 .l-center{
-    width:percentage(337/375);
+    width:percentage(340/375);
     margin: 0 auto;
+}
+
+@mixin l-center--computer(){
+    .l-center{
+        width:1440px;
+    }
 }
