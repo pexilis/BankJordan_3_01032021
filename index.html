@@ -27,7 +27,7 @@
     <title>OhMyFood - Les meilleurs restaurants gastronomique à votre disposition</title>
 </head>
 <body>
-    <div class="l-header grid">
+    <header class="l-header grid">
         <div class="l-header__left flex relative">
             <img src="assets/img/logo/ohmyfood.svg" alt="OhMyFood!" class="img">
         </div>
@@ -37,10 +37,54 @@
                 <span class="icon-txt__description">Paris, Belleville</span>
             </div>
         </div>
-    </div>
-    <main>
-        <section class="l-intro"></section>
-        <section class="l-restaurant"></section>
+    </header>
+    <main class="l-center">
+        <section class="l-intro flex">
+            <div class="l-intro__left">
+                <div class="l-intro__wrapper--left flex margin--horizontal">
+                    <div class="l-intro__hook hook hook--intro">
+                        <h1 class="hook__title">Réservez le menu qui vous convient</h1>
+                        <p class="hook__description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    </div>
+                    <button class="badge badge--action">Explorer nos restaurants</button>
+                </div>
+            </div>
+            <div class="l-intro__right">
+                <div class="l-intro__wrapper--right margin--horizontal">
+                    <h2 class="title--howto l-intro__howto">Fonctionnement</h2>
+                    <div>
+                        <div class="l-intro__step post--step relative">
+                            <span class="badge badge--count pos--center-left-corner absolute"></span>
+                            <div class="icon-txt icon-txt--post">
+                                <i class="fas fa-mobile-alt icon-txt__icon"></i>
+                                <span class="icon-txt__description">Choisissez un restaurant</span>
+                            </div>
+                        </div>
+                        <div class="l-intro__step post--step relative">
+                            <span class="badge badge--count pos--center-left-corner absolute"></span>
+                            <div class="icon-txt icon-txt--post">
+                                <i class="fas fa-mobile-alt icon-txt__icon"></i>
+                                <span class="icon-txt__description">Choisissez un restaurant</span>
+                            </div>
+                        </div>
+                        <div class="l-intro__step post--step relative">
+                            <span class="badge badge--count pos--center-left-corner absolute"></span>
+                            <div class="icon-txt icon-txt--post">
+                                <i class="fas fa-list-ul icon-txt__icon"></i>
+                                <span class="icon-txt__description">Composez votre menu</span>
+                            </div>
+                        </div>
+                        <div class="l-intro__step post--step post--step--active relative">
+                            <span class="badge badge--count pos--center-left-corner absolute"></span>
+                            <div class="icon-txt icon-txt--post">
+                                <i class="fas fa-store icon-txt__icon"></i>
+                                <span class="icon-txt__description">Dégustez au restaurant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
