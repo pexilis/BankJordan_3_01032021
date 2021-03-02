@@ -27,14 +27,19 @@
     <title>OhMyFood - Menu - La note enchantée</title>
 </head>
 <body>
-    <div class="l-header l-header--menu grid">
+    <header class="l-header l-header--menu grid">
         <div class="l-header__left flex relative">
             <a href="index.html" rel="prev">
                 <i class="fas fa-arrow-left icon-txt__icon absolute l-header__arrow pos--center-vertical"></i>
             </a>
             <img src="assets/img/logo/ohmyfood.svg" alt="OhMyFood!" class="img">
         </div>
-    </div>
-    
+    </header>
+    <picture>
+        <source media="(min-width:1440px)" srcset="assets/img/background/xl/la-note-enchantee.jpg">
+        <source media="(min-width:1023px) and (max-width:1439px)" srcset="assets/img/background/lg/la-note-enchantee.jpg">
+        <source media="(min-width:768px) and (max-width:1023px)" srcset="assets/img/background/md/la-note-enchantee.jpg"> 
+        <img class="img horizontal" src="assets/img/background/sm/la-note-enchantee.jpg" alt="Restaurant la palette du goût">
+    </picture>
 </body>
 </html>
