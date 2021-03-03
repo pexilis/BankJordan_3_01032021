@@ -34,3 +34,16 @@
         font-size:17px;
     }
 }
+
+.hook--item{ 
+    &, .hook__title, .hook__description{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .hook__title{
+        font-size: 18px;
+        margin-bottom:6px;
+    }
+}
