@@ -29,6 +29,10 @@
         background-color:map-get($baseColor, header);
         z-index:1;
     }
+
+    &--menu{
+        margin-bottom:221px;
+    }
 }
 
 @mixin l-header--laptop(){
@@ -53,7 +57,6 @@
     }
 
     .l-header--menu{
-        margin-bottom:221px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
