@@ -157,6 +157,8 @@ input:focus, textarea:focus, select:focus, button:focus {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "left" "right";
+  background-color: white;
+  margin-bottom: 221px;
 }
 .l-header__left, .l-header__right {
   justify-content: center;
