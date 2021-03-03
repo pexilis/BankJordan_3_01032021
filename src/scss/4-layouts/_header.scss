@@ -5,6 +5,8 @@
     grid-template-areas: 
         "left" 
         "right";
+    background-color:white;
+    margin-bottom:221px;
 
     &__left, &__right{
         justify-content:center;
