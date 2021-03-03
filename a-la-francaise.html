@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" type="text/css" href="src/css/menu.css">
     <script src="https://kit.fontawesome.com/943c921e25.js" crossorigin="anonymous"></script>
-    <title>OhMyFood - Menu - A la Française</title>
+    <title>OhMyFood - Restaurant - A la Française</title>
 </head>
 <body>
+    <picture>
+        <source media="(min-width:1440px)" srcset="assets/img/background/xl/a-la-francaise.jpg">
+        <source media="(min-width:1023px) and (max-width:1439px)" srcset="assets/img/background/lg/a-la-francaise.jpg">
+        <source media="(min-width:768px) and (max-width:1023px)" srcset="assets/img/background/md/a-la-francaise.jpg"> 
+        <img class="img horizontal img--background" src="assets/img/background/sm/a-la-francaise.jpg" alt="Restaurant la palette du goût">
+    </picture>
     <header class="l-header l-header--menu grid">
         <div class="l-header__left flex relative">
             <a href="index.html" rel="prev">
@@ -35,11 +41,145 @@
             <img src="assets/img/logo/ohmyfood.svg" alt="OhMyFood!">
         </div>
     </header>
-    <picture>
-        <source media="(min-width:1440px)" srcset="assets/img/background/xl/a-la-francaise.jpg">
-        <source media="(min-width:1023px) and (max-width:1439px)" srcset="assets/img/background/lg/a-la-francaise.jpg">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="assets/img/background/md/a-la-francaise.jpg"> 
-        <img class="img img--background horizontal" src="assets/img/background/sm/a-la-francaise.jpg" alt="Restaurant la palette du goût">
-    </picture>
+    
+    <main class="l-menu relative">
+        <div class="l-center l-menu__wrapper">
+            <header class="l-menu__header flex">
+                <h1 class="title--menu">A la française</h1>
+                <img src="assets/heart.svg" class="img--heart" alt="Heart Logo">
+            </header>
+
+            <div class="l-menu__grid grid">
+                <div class="l-menu__category">
+                    <h2 class="title--category l-menu__title">Entrées</h2>
+                    <div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Tartare de poulpe acidulé</h3>
+                                <p class="hook__description">Aux zests d'orange</p>
+                            </header>
+                            <div class="item__price">25€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Velouté de légumes d'antan</h3>
+                                <p class="hook__description">Carotte, panais, topinambour</p>
+                            </header>
+                            <div class="item__price">35€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Soupe à l'oignon</h3>
+                                <p class="hook__description">Revisitée</p>
+                            </header>
+                            <div class="item__price">20€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-menu__category">
+                    <h2 class="title--category l-menu__title">Plats</h2>
+                    <div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Coquilles Saint-Jacques</h3>
+                                <p class="hook__description">Accompagnées d'une purée de panais</p>
+                            </header>
+                            <div class="item__price">40€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Magret de canard</h3>
+                                <p class="hook__description">Et parmentier de pommes de terres</p>
+                            </header>
+                            <div class="item__price">35€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Pigeonneau d'Ille-et-Vilaine</h3>
+                                <p class="hook__description">Sur son lit de gnocchis aux légumes</p>
+                            </header>
+                            <div class="item__price">44€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-menu__category">
+                    <h2 class="title--category l-menu__title">Desserts</h2>
+                    <div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Pétales de violettes glacés</h3>
+                                <p class="hook__description">Et purée de noisettes</p>
+                            </header>
+                            <div class="item__price">18€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Fondant au chocolat</h3>
+                                <p class="hook__description">Revisité</p>
+                            </header>
+                            <div class="item__price">22€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="l-menu__choice item--menu">
+                            <header class="item__header hook--item relative">
+                                <h3 class="hook__title">Millefeuille croustillant</h3>
+                                <p class="hook__description">Myrtilles et pâte d'amande</p>
+                            </header>
+                            <div class="item__price">23€</div>
+                            <div class="item__badge badge badge--item">
+                                <span class="item__round badge--round badge--white">
+                                    <i class="fas fa-check icon--check"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+         <button class="l-menu__button badge badge--call badge--primary absolute pos--center-horizontal">Commander</button>                        
+    </div>
+    </main>
 </body>
 </html>
