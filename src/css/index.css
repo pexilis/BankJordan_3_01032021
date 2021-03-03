@@ -105,6 +105,10 @@ input:focus, textarea:focus, select:focus, button:focus {
   transform: translate(50%, 50%);
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -117,6 +121,17 @@ input:focus, textarea:focus, select:focus, button:focus {
 .img--heart {
   width: 23px;
   height: 23px;
+}
+
+.img--footer {
+  width: 102px;
+  height: 20px;
+  fill: white;
+}
+
+.img--header {
+  width: 168px;
+  height: 30px;
 }
 
 .img--background {
@@ -225,6 +240,18 @@ input:focus, textarea:focus, select:focus, button:focus {
   grid-template-columns: 1fr;
   grid-auto-rows: 252px;
   grid-row-gap: 17px;
+}
+
+.l-footer {
+  padding-top: 48px;
+  padding-bottom: 37px;
+  background-color: #353535;
+}
+.l-footer__logo {
+  margin-bottom: 23px;
+}
+.l-footer__link:not(:last-child) {
+  margin-bottom: 11px;
 }
 
 /* COMPONENTS */
@@ -345,6 +372,20 @@ input:focus, textarea:focus, select:focus, button:focus {
   font-weight: 500;
 }
 
+.icon-txt--footer {
+  position: relative;
+}
+.icon-txt--footer .icon-txt__icon {
+  font-size: 15px;
+}
+.icon-txt--footer .icon-txt__description {
+  left: 27px;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 500;
+  float: right;
+}
+
 .title--section {
   font-size: 24px;
 }
@@ -366,6 +407,11 @@ input:focus, textarea:focus, select:focus, button:focus {
   width: 45px;
   height: 4px;
   background-color: #99E2D0;
+}
+
+.link--footer {
+  font-weight: 400;
+  font-size: 15px;
 }
 
 /* COMPOSITIONS */
