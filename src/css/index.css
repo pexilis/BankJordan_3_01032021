@@ -173,7 +173,6 @@ input:focus, textarea:focus, select:focus, button:focus {
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "left" "right";
   background-color: white;
-  margin-bottom: 221px;
 }
 .l-header__left, .l-header__right {
   justify-content: center;
@@ -491,6 +490,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   }
 
   .l-header--menu {
+    margin-bottom: 221px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "left";
@@ -536,6 +536,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   }
 
   .l-header--menu {
+    margin-bottom: 221px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "left";
