@@ -382,6 +382,10 @@ input:focus, textarea:focus, select:focus, button:focus {
   margin-left: 16px;
   margin-top: 14px;
 }
+.card--restaurant .card__heart {
+  bottom: 35px;
+  right: 16px;
+}
 
 .post--step {
   padding: 25px 0;
