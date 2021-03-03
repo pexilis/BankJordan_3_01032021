@@ -6,7 +6,7 @@
         "left" 
         "right";
     background-color:white;
-    margin-bottom:221px;
+    
 
     &__left, &__right{
         justify-content:center;
@@ -53,6 +53,7 @@
     }
 
     .l-header--menu{
+        margin-bottom:221px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
