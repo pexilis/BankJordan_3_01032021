@@ -72,6 +72,10 @@
     transform:translate(50%, 50%);
 }
 
+.block{
+    display:block;
+}
+
 .flex{
     display:flex;
 }
@@ -84,6 +88,17 @@
 .img--heart{
     width:23px;
     height:23px;
+}
+
+.img--footer{
+    width:102px;
+    height:20px;
+    fill: white;
+}
+
+.img--header{
+    width:168px;
+    height:30px;
 }
 
 .img--background{
