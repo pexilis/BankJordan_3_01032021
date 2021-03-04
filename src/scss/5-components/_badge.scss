@@ -1,39 +1,33 @@
 .badge--call{
     display:block;
-    min-width:186px;
+    min-width:200px;
     padding: 15px 10px;
-    color:white;
     border-radius:26px;
+    font-weight:500;
 }
 
-.badge--primary{
-    @include actionGradiant;
+.badge__text{
+    position: relative;
+    display:block;
+    z-index:2;
 }
 
 .badge--round{
     display:flex;
     justify-content:center;
     align-items:center;
-    width:30px;
-    height:30px;
     border-radius:50%;
 }
 
-.badge--white{
-    background-color:white;
-}
-
-.badge--count{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
+.badge--25px{
     width:25px;
     height:25px;
-    border-radius:50%;
-    font-size:12px;
-    background-color: map-get($baseColor, primary);
+}
 
+
+.badge--count{
+    font-size:12px;
+    
     &::after{
         counter-increment:badgeCounter;
         content:counter(badgeCounter)
@@ -41,24 +35,15 @@
 }
 
 .badge--state{
-    top:13px;
-    right:13px;
     padding:8px 15px;
     border-radius:2px;
     font-size:14px;
     font-weight:500;
 }
 
-.badge--green{
-    background-color:map-get($baseColor, tertiary);
-    color:darken(map-get($baseColor, tertiary), 40);
-}
-
 .badge--item{
-    font-size:20px;
     display:flex;
     align-items:center;
     justify-content:center;
     padding:16px 20px;
-    background-color:map-get($baseColor, tertiary);
 }

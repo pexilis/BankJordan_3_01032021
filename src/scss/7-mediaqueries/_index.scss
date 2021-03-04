@@ -1,18 +1,9 @@
-@media screen and (min-width:768px) and (max-width:1023px){
-    @include l-intro--tablet;
-    @include l-restaurant--tablet;
-}
-
-@media screen and (min-width:1024px) and (max-width:1439px){
-    @include l-header--laptop;
+@media screen and (min-width:768px){
     @include l-intro--tablet;
     @include l-restaurant--tablet;
 }
 
 @media screen and (min-width:1440px){
-    @include l-header--laptop;
     @include l-center--computer;
-    @include l-intro--tablet;
-    @include l-restaurant--tablet;
     @include l-restaurant--computer;
 }

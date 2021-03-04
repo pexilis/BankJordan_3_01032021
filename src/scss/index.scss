@@ -6,7 +6,7 @@
 /* BASES */
 @import '3-bases/webfonts';
 @import '3-bases/reset';
-@import '3-bases/typography';
+
 
 /* LAYOUTS */
 
@@ -19,6 +19,7 @@
 
 
 /* COMPONENTS */
+@import '5-components/colors';
 @import '5-components/badge';
 @import '5-components/hook';
 @import '5-components/icon-text';

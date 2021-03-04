@@ -1,15 +1,13 @@
 .l-intro{
     flex-direction:column; 
 
-    &__left{
+    &__left, &__right{
         width:100%;
         padding: 60px 0;
-        background-color:map-get($baseColor, introLeft);
     }
 
-    &__right{
-        width:100%;
-        padding: 60px 0;  
+    &__left{
+        background-color:map-get($baseColor, introLeft);
     }
 
     &__wrapper--left{
@@ -40,7 +38,6 @@
         flex-direction:row;
         &__left{
             background-color:white;
-            flex-shrink: 0;
             width:337px;
         }
 

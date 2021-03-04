@@ -2,6 +2,7 @@
     display:flex;
     overflow: hidden;
     cursor: pointer;
+    user-select:none;
     
     border-radius:16px;
     background-color:white;
@@ -14,12 +15,12 @@
 
     .item__badge{
         margin-right:-70px;
-        transition:margin-right ease-in-out 0.2s 0.2s; 
+        transition:margin-right ease-in-out 0.2s; 
     }
 
     .item__round{
         transform: rotateZ(90deg) ;
-        transition: transform ease-in-out 0.1s 0.2s;
+        transition: transform ease-in-out 0.1s;
     }
 
     .item__price{
