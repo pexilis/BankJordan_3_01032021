@@ -16,10 +16,13 @@
 @import '4-layouts/intro';
 @import '4-layouts/restaurant';
 @import '4-layouts/footer';
+@import '4-layouts/foreground';
 
 
 /* COMPONENTS */
+@import '5-components/animations';
 @import '5-components/colors';
+@import '5-components/spinner';
 @import '5-components/badge';
 @import '5-components/hook';
 @import '5-components/icon-text';

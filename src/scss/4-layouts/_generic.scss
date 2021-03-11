@@ -91,9 +91,10 @@
 }
 
 .img--footer{
-    width:102px;
+    width:100px;
     height:20px;
-    fill: white;
+
+    color:white;
 }
 
 .img--header{
@@ -131,4 +132,10 @@
 
 .grid{
     display:grid;
+}
+
+.flex--center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }

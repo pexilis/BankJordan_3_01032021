@@ -3,9 +3,16 @@
     height:$height;
 }
 
-@mixin gradiant($startColor, $endColor){
-    background: $startColor;
-    background: linear-gradient(180deg, $startColor 20%, $endColor 95%);
+
+@mixin delays($number, $delay){
+    @for $i from 1 through $number{
+        .delay-#{$i}{
+            animation-delay:$delay * $i * 1s;
+        }
+    }
 }
 
-
+@mixin gradiant($color){
+    background: $color;
+    background: linear-gradient(180deg, $color 20%, darken($color, 20%));
+}

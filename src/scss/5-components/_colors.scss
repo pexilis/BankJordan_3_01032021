@@ -1,7 +1,7 @@
 .bg-gradiant--primary{
     position:relative;
     overflow:hidden;
-    @include gradiant(#e771da, #a15bdb);
+    @include gradiant(#e771da);
     &::after{
         content:'';
         position:absolute;
@@ -10,7 +10,7 @@
         width:100%;
         height:100%;
         border-radius:inherit;
-        @include gradiant(darken(#e771da, 20%), darken(#a15bdb, 20%));
+        background:darken(#e771da, 30%);
         z-index:0;
         transform:translateX(-100%);
         transition: transform ease-out 0.2s;

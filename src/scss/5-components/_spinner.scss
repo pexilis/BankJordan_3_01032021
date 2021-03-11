@@ -1,0 +1,56 @@
+.spinner{
+    display:flex;
+    align-items:flex-end;
+    height:100px;
+    
+    div, &::before, &::after{
+        position:relative;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        animation-name:spinnerAnimation;
+        animation-duration: 0.33s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: (0.175, 0.885, 0.32, 1.275)
+
+    }
+
+
+    &::before, &::after{
+        display:block;
+        content:'';
+    }
+
+    div{
+        margin-right:12px;
+        @include gradiant(map-get($baseColor, secondary));
+    }
+
+    div:nth-child(2){
+        animation-delay: 0.1s;
+    }
+
+    div:nth-child(3){
+        animation-delay: 0.2s;
+    }
+
+    div:nth-child(4){
+        animation-delay: 0.3s;
+    }
+
+    div:nth-child(5){
+        animation-delay: 0.4s;
+    }
+}
+
+
+@keyframes spinnerAnimation{
+    from{
+        transform:translateY(1);
+    }
+
+    to{
+        transform:translateY(-180px);
+    }
+}
