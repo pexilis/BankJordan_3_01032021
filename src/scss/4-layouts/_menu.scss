@@ -13,7 +13,7 @@
     }
 
     &__wrapper{
-        max-width:425px;
+        max-width:700px;
     }
 
     &__grid{
@@ -32,18 +32,17 @@
     }
 }
 
-@mixin l-menu--laptop(){
+@mixin l-menu--laptop{
     .l-menu{
-        &__wrapper{
-            max-width:600px;
+        &__grid{
+            grid-template-columns: repeat(3, 33%);
+            grid-auto-rows: auto;
+            grid-gap: 40px;
+            margin-bottom:50px;
         }
-    }
-}
 
-@mixin l-menu--computer(){
-    .l-menu{
         &__wrapper{
-            max-width:800px;
+            max-width:1200px;
         }
-    }
+    }   
 }

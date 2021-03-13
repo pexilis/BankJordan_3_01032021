@@ -1,7 +1,7 @@
 // Abstracts 
 @import '1-abstracts/variables';
 @import '1-abstracts/mixins';
-@import '1-abstracts/deploy';
+
 
 /* BASES */
 @import '3-bases/webfonts';
@@ -18,6 +18,7 @@
 
 
 /* COMPONENTS */
+@import '5-components/transitions';
 @import '5-components/animations';
 @import '5-components/colors';
 @import '5-components/badge';
@@ -30,6 +31,7 @@
 
 /* COMPOSITIONS */
 @import '6-compositions/item';
+
 
 
 

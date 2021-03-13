@@ -1,11 +1,12 @@
 .l-header{
+    background-color:white;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "left" 
         "right";
-    background-color:white;
+    
     
 
     &__left, &__right{
@@ -17,7 +18,6 @@
         align-items:center;
         grid-area:left;
         z-index:2;
-        box-shadow:0 2px 15px map-get($baseColor, shadow);
     }
 
     &__arrow{

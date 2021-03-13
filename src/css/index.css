@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 /* BASES */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -118,9 +119,14 @@ input:focus, textarea:focus, select:focus, button:focus {
   user-select: none;
 }
 
-.img--heart {
+.img--heart, .img--heart-fill {
   width: 23px;
   height: 23px;
+}
+
+.img--heart-fill {
+  fill: red;
+  stroke: red;
 }
 
 .img--footer {
@@ -173,11 +179,11 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 .l-header {
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "left" "right";
-  background-color: white;
 }
 .l-header__left, .l-header__right {
   justify-content: center;
@@ -187,7 +193,6 @@ input:focus, textarea:focus, select:focus, button:focus {
   align-items: center;
   grid-area: left;
   z-index: 2;
-  box-shadow: 0 2px 15px #CECECE;
 }
 .l-header__arrow {
   left: 23px;
@@ -207,13 +212,20 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 .l-intro {
+  width: 95%;
   flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .l-intro__left, .l-intro__right {
   width: 100%;
-  padding: 60px 0;
+  padding-bottom: 60px 0;
+}
+.l-intro__right {
+  padding-top: 60px;
 }
 .l-intro__left {
+  padding-top: 60px;
   background-color: #F6F6F6;
 }
 .l-intro__wrapper--left {
@@ -222,7 +234,18 @@ input:focus, textarea:focus, select:focus, button:focus {
   width: 93.3333333333%;
 }
 .l-intro__wrapper--right {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.l-intro__wrapper--right div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.l-intro__wrapper--right div div {
+  display: flex;
+  margin-right: 30px;
+  flex-shrink: 0;
 }
 .l-intro__hook {
   margin-bottom: 30px;
@@ -235,8 +258,19 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 .l-restaurant {
-  padding: 60px 0;
+  padding-bottom: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #F6F6F6;
+}
+.l-restaurant::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  background-color: inherit;
+  height: 1175px;
+  z-index: -1000;
 }
 .l-restaurant__title {
   margin-bottom: 27px;
@@ -267,9 +301,10 @@ input:focus, textarea:focus, select:focus, button:focus {
   height: 100%;
   animation: foregroundAnimation 3s linear forwards;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .l-foreground__wrapper {
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -332,25 +367,52 @@ input:focus, textarea:focus, select:focus, button:focus {
 
 @keyframes apparition {
   0% {
+    transform: rotateX(90deg);
     opacity: 0;
-    transform: scale(0);
   }
-  80% {
-    transform: scale(1.02);
+  20%, 100% {
+    visibility: visible;
+  }
+  20% {
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
-    visibility: visible;
-    transform: scaleY(1);
+    transform: rotateX(0);
   }
 }
-.bg-gradiant--primary {
-  position: relative;
-  overflow: hidden;
-  background: #e771da;
-  background: linear-gradient(180deg, #e771da 20%, #cf23bc);
+@keyframes pulse-animation {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+  60% {
+    transform: scale(1.4);
+    opacity: 0.4;
+  }
+  80% {
+    transform: scale(1.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.09);
+    opacity: 1;
+  }
 }
-.bg-gradiant--primary::after {
+/* 
+    Cette transition permet de faire 
+    un effet d'éclairage naturel avec l'ombre porté qui s'intensifie de façon réaliste 
+*/
+.transition--flashlight::after {
+  opacity: 0;
   content: "";
   position: absolute;
   top: 0px;
@@ -358,13 +420,19 @@ input:focus, textarea:focus, select:focus, button:focus {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  background: #a31c94;
   z-index: 0;
-  transform: translateX(-100%);
-  transition: transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, box-shadow ease-out 0.2s;
+  background: rgba(255, 255, 255, 0.3);
 }
-.bg-gradiant--primary:hover::after {
-  transform: translateX(0);
+.transition--flashlight:hover::after {
+  opacity: 1;
+}
+.transition--flashlight:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.color-secondary {
+  color: #FF79DA;
 }
 
 .bg--primary {
@@ -384,8 +452,8 @@ input:focus, textarea:focus, select:focus, button:focus {
   color: #278870;
 }
 
-.txt--white {
-  color: white;
+.shadow {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .spinner {
@@ -395,11 +463,11 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .spinner div, .spinner::before, .spinner::after {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   animation-name: spinnerAnimation;
-  animation-duration: 0.33s;
+  animation-duration: 0.28s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: 0.175, 0.885, 0.32, 1.275;
@@ -409,9 +477,11 @@ input:focus, textarea:focus, select:focus, button:focus {
   content: "";
 }
 .spinner div {
-  margin-right: 12px;
   background: #FF79DA;
   background: linear-gradient(180deg, #FF79DA 20%, #ff13be);
+}
+.spinner div:not(:last-child) {
+  margin-right: 15px;
 }
 .spinner div:nth-child(2) {
   animation-delay: 0.1s;
@@ -422,24 +492,41 @@ input:focus, textarea:focus, select:focus, button:focus {
 .spinner div:nth-child(4) {
   animation-delay: 0.3s;
 }
-.spinner div:nth-child(5) {
-  animation-delay: 0.4s;
-}
 
 @keyframes spinnerAnimation {
   from {
     transform: translateY(1);
+    opacity: 0.3;
   }
   to {
-    transform: translateY(-180px);
+    transform: translateY(-200px);
+    opacity: 0.8;
   }
 }
 .badge--call {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
   display: block;
   min-width: 200px;
   padding: 15px 10px;
   border-radius: 26px;
   font-weight: 500;
+}
+
+.badge--rose {
+  background: #e771da;
+  background: linear-gradient(180deg, #e771da 20%, #cf23bc);
+  color: white;
+}
+
+.badge--primary {
+  background-color: #9356DC;
+  color: white;
+}
+
+.badge--tertiary {
+  background: #99E2D0;
 }
 
 .badge__text {
@@ -448,20 +535,14 @@ input:focus, textarea:focus, select:focus, button:focus {
   z-index: 2;
 }
 
-.badge--round {
+.badge--count {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-}
-
-.badge--25px {
+  font-size: 12px;
   width: 25px;
   height: 25px;
-}
-
-.badge--count {
-  font-size: 12px;
 }
 .badge--count::after {
   counter-increment: badgeCounter;
@@ -520,6 +601,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 
 .icon-txt--header .icon-txt__icon {
   margin-right: 18px;
+  color: #353535;
 }
 .icon-txt--header .icon-txt__description {
   color: #353535;
@@ -527,11 +609,12 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 .icon-txt--post .icon-txt__icon {
-  margin-right: 28px;
+  margin-right: 20px;
+  color: #7E7E7E;
 }
 .icon-txt--post .icon-txt__description {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .icon-txt--footer {
@@ -587,12 +670,34 @@ input:focus, textarea:focus, select:focus, button:focus {
   font-size: 15px;
 }
 
+.icon--check {
+  background-color: white;
+  color: #99E2D0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon--heart {
+  font-size: 30px;
+}
+
+.icon--heart-fill {
+  opacity: 0;
+  color: #FF79DA;
+}
+.icon--heart-fill:hover {
+  animation: pulse-animation 0.3s ease-in-out forwards;
+}
+
 /* COMPOSITIONS */
 .card--restaurant {
   user-select: none;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 2px 10px #CECECE;
 }
 .card--restaurant__img {
   border-radius: 20px 20px 0 0;
@@ -612,38 +717,31 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 .post--step {
+  max-width: 280px;
   padding: 25px 0;
   padding-left: 26px;
   padding-right: 72px;
   border-radius: 20px;
   background-color: #F6F6F6;
-  box-shadow: 0 2px 10px #CECECE;
 }
-
-.post--step--active {
+.post--step.active {
   background-color: #F5EDFF;
 }
-.post--step--active .fa-store {
+.post--step.active .fa-store {
   color: #9356DC;
 }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
-  .l-intro {
-    flex-direction: row;
-  }
-  .l-intro__left {
+  .l-restaurant {
     background-color: white;
-    width: 337px;
   }
-  .l-intro__wrapper--left {
-    width: 91.3946587537%;
+  .l-restaurant::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
   }
-  .l-intro__wrapper--right {
-    width: 85.9693877551%;
-    max-width: 617px;
-  }
-
   .l-restaurant__wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 252px;
@@ -656,7 +754,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   }
 
   .l-restaurant__wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

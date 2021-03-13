@@ -85,9 +85,14 @@
     user-select:none;
 }
 
-.img--heart{
+.img--heart, .img--heart-fill{
     width:23px;
     height:23px;
+}
+
+.img--heart-fill{
+    fill:red;
+    stroke:red;
 }
 
 .img--footer{
@@ -139,3 +144,5 @@
     align-items: center;
     justify-content: center;
 }
+
+
