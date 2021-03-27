@@ -13,20 +13,14 @@ Pour ce projet, il n'y a pas de backend, donc toutes les données sont statiques
    - SASS
 
 
-## Développement : 
+## Testez le projet : 
 ```bash
 git clone https://github.com/pexilis/BankJordan_3_01032021.git
 cd BankJordan_3_01032021
 npm run dev
 ```
 
-## Mise en production : 
-```bash
-git clone https://github.com/pexilis/BankJordan_3_01032021.git
-cd BankJordan_3_01032021
-npm run prod
-```
-+Remplacez les chemins CSS
+
 
 
 

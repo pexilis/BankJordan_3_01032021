@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "sass --watch src/scss:src/css",
-    "prod": "sass --style compressed --no-source-map --quiet src/scss/:dist/css/"
+    "prod": "sass --style compressed --no-source-map --quiet src/scss/:dist/src/css/"
   },
   "author": "",
   "license": "ISC"
