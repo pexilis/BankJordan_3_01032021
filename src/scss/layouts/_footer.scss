@@ -10,4 +10,8 @@
     &__link:not(:last-child){
         margin-bottom:11px;
     }
+
+    &__link:hover{
+        text-decoration: underline solid white;
+    }
 }
