@@ -5,10 +5,11 @@
     padding-right: 72px;
     border-radius: 20px;
     background-color:map-get($baseColor, introLeft);
+    transition:background-color 0.2s ease-in-out;
 
-    &.active{
+    &:hover{
         background-color:#F5EDFF;
-        .fa-store{
+        .fas{
             color:map-get($baseColor, primary);
         }
     }
