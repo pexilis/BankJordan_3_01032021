@@ -1,8 +1,0 @@
-@media screen and (min-width:768px){
-    @include l-restaurant--tablet;
-}
-
-@media screen and (min-width:1440px){
-    @include l-center--computer;
-    @include l-restaurant--computer;
-}

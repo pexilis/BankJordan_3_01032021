@@ -1,0 +1,26 @@
+.l-header{
+    background-color:white;
+    
+    &__left, &__right{
+        justify-content:center;
+        padding: 1rem 0;
+    }
+
+    &__left{
+        align-items:center;
+    }
+
+    &__arrow{
+        left:1.4375rem;
+    }
+
+    &__right{
+        background-color:map-get($baseColor, header);
+    }
+
+    &--menu{
+        margin-bottom:13.8125rem;
+    }
+}
+
+

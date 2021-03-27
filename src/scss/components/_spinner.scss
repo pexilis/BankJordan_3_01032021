@@ -1,0 +1,36 @@
+.spinner{
+    position:relative;
+    
+    div, .animated{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+    }
+
+    div{
+        @include gradiant(map-get($baseColor, secondary));
+        @include circular(180px, 10);
+    }
+
+    .animated{
+        animation: spinnerAnimation 1.0s ease-in-out infinite;
+    }
+
+    
+
+}
+
+
+@keyframes spinnerAnimation{
+    0%, 30%, 90%, 100% {
+        width:30px;
+        height:30px;
+        opacity:0;
+      }
+
+    50% {
+        width:40px;
+        height:40px;
+        opacity:1;
+    }
+}

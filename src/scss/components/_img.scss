@@ -1,0 +1,36 @@
+.img{
+    border-radius:inherit;
+    user-select:none;
+}
+
+.img--heart, .img--heart-fill{
+    width:23px;
+    height:23px;
+}
+
+.img--footer{
+    width:100px;
+    height:20px;
+
+    color:white;
+}
+
+.img--header{
+    width:168px;
+    height:30px;
+}
+
+.img--background{
+    object-fit:cover;
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:320px;
+    z-index:-100;
+}
+
+.img--restaurant{
+    width:100%;
+    object-fit:cover;
+}

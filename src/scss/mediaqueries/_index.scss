@@ -1,0 +1,13 @@
+@media screen and (min-width:768px){
+    @include l-restaurant--tablet;
+    @include l-intro--tablet;
+    @include post--laptop;
+}
+
+@media screen and (min-width:1024px){
+    @include l-intro--laptop;
+}
+
+@media screen and (min-width:1440px){
+    @include l-restaurant--computer;
+}

@@ -114,40 +114,6 @@ input:focus, textarea:focus, select:focus, button:focus {
   display: flex;
 }
 
-.img {
-  object-fit: cover;
-  user-select: none;
-}
-
-.img--heart, .img--heart-fill {
-  width: 23px;
-  height: 23px;
-}
-
-.img--heart-fill {
-  fill: red;
-  stroke: red;
-}
-
-.img--footer {
-  width: 100px;
-  height: 20px;
-  color: white;
-}
-
-.img--header {
-  width: 168px;
-  height: 30px;
-}
-
-.img--background {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 500px;
-  z-index: -1000;
-}
-
 .horizontal {
   width: 100%;
 }
@@ -180,34 +146,27 @@ input:focus, textarea:focus, select:focus, button:focus {
 
 .l-header {
   background-color: white;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "left" "right";
 }
 .l-header__left, .l-header__right {
   justify-content: center;
-  padding: 16px 0;
+  padding: 1rem 0;
 }
 .l-header__left {
   align-items: center;
-  grid-area: left;
-  z-index: 2;
 }
 .l-header__arrow {
-  left: 23px;
+  left: 1.4375rem;
 }
 .l-header__right {
-  grid-area: right;
   background-color: #EAEAEA;
-  z-index: 1;
 }
 .l-header--menu {
-  margin-bottom: 221px;
+  margin-bottom: 13.8125rem;
 }
 
 .l-center {
-  width: 90.6666666667%;
+  width: 89.3333333333%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -238,6 +197,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .l-menu__choice {
   margin-bottom: 16px;
+}
+.l-menu__heart {
+  right: 50px;
+  top: 0px;
 }
 
 .l-footer {
@@ -287,40 +250,80 @@ input:focus, textarea:focus, select:focus, button:focus {
   transform-origin: top center;
 }
 
-.delay-1 {
-  animation-delay: 0.2s;
+.menu--delay-1 {
+  animation-delay: 0.2s !important;
 }
 
-.delay-2 {
-  animation-delay: 0.4s;
+.menu--delay-2 {
+  animation-delay: 0.4s !important;
 }
 
-.delay-3 {
-  animation-delay: 0.6s;
+.menu--delay-3 {
+  animation-delay: 0.6s !important;
 }
 
-.delay-4 {
-  animation-delay: 0.8s;
+.menu--delay-4 {
+  animation-delay: 0.8s !important;
 }
 
-.delay-5 {
-  animation-delay: 1s;
+.menu--delay-5 {
+  animation-delay: 1s !important;
 }
 
-.delay-6 {
-  animation-delay: 1.2s;
+.menu--delay-6 {
+  animation-delay: 1.2s !important;
 }
 
-.delay-7 {
-  animation-delay: 1.4s;
+.menu--delay-7 {
+  animation-delay: 1.4s !important;
 }
 
-.delay-8 {
-  animation-delay: 1.6s;
+.menu--delay-8 {
+  animation-delay: 1.6s !important;
 }
 
-.delay-9 {
-  animation-delay: 1.8s;
+.menu--delay-9 {
+  animation-delay: 1.8s !important;
+}
+
+.spinner--delay-1 {
+  animation-delay: -0.1s !important;
+}
+
+.spinner--delay-2 {
+  animation-delay: -0.2s !important;
+}
+
+.spinner--delay-3 {
+  animation-delay: -0.3s !important;
+}
+
+.spinner--delay-4 {
+  animation-delay: -0.4s !important;
+}
+
+.spinner--delay-5 {
+  animation-delay: -0.5s !important;
+}
+
+.spinner--delay-6 {
+  animation-delay: -0.6s !important;
+}
+
+.spinner--delay-7 {
+  animation-delay: -0.7s !important;
+}
+
+.spinner--delay-8 {
+  animation-delay: -0.8s !important;
+}
+
+.spinner--delay-9 {
+  animation-delay: -0.9s !important;
+}
+
+.spinner--delay-10 {
+  animation-delay: -1s !important;
 }
 
 @keyframes apparition {
@@ -491,6 +494,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   color: #353535;
 }
 .icon-txt--header .icon-txt__description {
+  background-color: transparent;
   color: #353535;
   font-weight: 500;
 }
@@ -523,7 +527,8 @@ input:focus, textarea:focus, select:focus, button:focus {
   font-size: 24px;
 }
 
-.title--menu {
+.title--menu, .title--header {
+  user-select: none;
   font-family: "Shrikhand", cursive;
   font-size: 24px;
 }
@@ -549,6 +554,12 @@ input:focus, textarea:focus, select:focus, button:focus {
   width: 45px;
   height: 4px;
   background-color: #99E2D0;
+}
+
+.title--logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 32px;
+  text-transform: lowercase;
 }
 
 .icon--check {
@@ -578,6 +589,42 @@ input:focus, textarea:focus, select:focus, button:focus {
   color: white;
   font-weight: 400;
   font-size: 15px;
+}
+
+.img {
+  border-radius: inherit;
+  user-select: none;
+}
+
+.img--heart, .img--heart-fill {
+  width: 23px;
+  height: 23px;
+}
+
+.img--footer {
+  width: 100px;
+  height: 20px;
+  color: white;
+}
+
+.img--header {
+  width: 168px;
+  height: 30px;
+}
+
+.img--background {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 320px;
+  z-index: -100;
+}
+
+.img--restaurant {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* COMPOSITIONS */
@@ -611,7 +658,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   padding-bottom: 10px;
 }
 .item--menu:hover .item__badge {
-  margin-right: 0;
+  margin-right: -3px;
 }
 .item--menu:hover .item__round {
   transform: rotate(0deg);
@@ -620,10 +667,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 /* MEDIA QUERIES */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .l-menu__grid {
-    grid-template-columns: repeat(3, 33%);
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-gap: 40px;
-    margin-bottom: 50px;
   }
   .l-menu__wrapper {
     max-width: 1200px;
@@ -631,13 +676,11 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 @media screen and (min-width: 1440px) {
   .l-menu__grid {
-    grid-template-columns: repeat(3, 33%);
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-gap: 40px;
-    margin-bottom: 50px;
   }
   .l-menu__wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 
