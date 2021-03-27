@@ -1,28 +1,33 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+# Ohmyfood
 
-<br />
-<p align="center">
-  <a href="https://github.com/pexilis/{projectName}">
-    <img src="images/" alt="Logo" width="" height="">
-  </a>
+L'objectif de ce projet est de réalisé un ensemble de pages HTML/SASS pour une entreprise fictive de réservation 
+en ligne appelée OhMyFood. 
 
-  <h3 align="center">{{project Title}}</h3>
+L'objectif est à la fois de maîtriser les animations CSS, 
+mais aussi d'assurer la cohérence graphique et l'érgonomie de ces dernières. 
 
-  <p align="center">
-    {{Short Description}}
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Voir une démo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</p>
+Pour ce projet, il n'y a pas de backend, donc toutes les données sont statiques.
+
+## Contraintes techniques : 
+   - HTML
+   - SASS
+
+
+## Développement : 
+```bash
+git clone https://github.com/pexilis/BankJordan_3_01032021.git
+cd BankJordan_3_01032021
+npm run dev
+```
+
+## Mise en production : 
+```bash
+git clone https://github.com/pexilis/BankJordan_3_01032021.git
+cd BankJordan_3_01032021
+npm run prod
+```
++Remplacez les chemins CSS
+
+
+
+
